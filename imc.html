@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcul d'IMC</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript"
+        src="fonctionIMC.js">
+
+
+    </script>
+</head>
+<body onload="exitHover()">
+<ul id="main-nav">
+    <li><a>Actions</a>
+        <ul>
+            <li><a onclick="imc()">Calculer</a></li>
+            <li><a onclick="document.getElementById('masse').value = ''; document.getElementById('Taille').value = '';resetIMG();">Effacer</a></li>
+            <li><a onclick="print()">Imprimer</a></li>
+        </ul>
+    </li>
+    <li><a href="imc.html">Mode</a>
+        <ul>
+            <li><a href="imc.html">Calculer IMC</a></li>
+            <li><a href="factorielle.html">Calculer factorielle</a></li>
+            <li><a href="fibonacci.html">Calculer fibonacci </a></li>
+            <li><a href="convertion.html">Convertir</a></li>
+        </ul>
+    </li>
+    <li><a href="imc.html" title="e.g. 'Information about the company ...">Aide</a>
+        <ul>
+            <li><a href="imc.html">Description du site</a></li>
+            <li><a href="imc.html">Nous contacter</a></li>
+        </ul>
+    </li>
+</ul>
+<h1>Calcul de l'indice de masse corporelle</h1>
+<fieldset>
+    <h3>Insérez votre masse en KG et votre taille en m dans les deux champs de texte suivants:</h3>
+    <form id="question">
+        <label>Masse (en Kg): </label>
+        <input id="masse" type="text" placeholder="ex: 65" value="" onchange="verifChamp()"><img width="25" src="" id="imgMasse">
+        <p id="warningMasse"></p>
+        <label>Taille (en m)</label>
+        <input id="Taille" type="text" placeholder="ex:1.68" value="" onchange="verifChamp()">
+        <img src="" id="imgTaille" width="25">
+        <p id="warningTaille"></p>
+        <input id="H" name="gender" checked type="radio">homme<input id="F" name="gender" type="radio">Femme
+        <input type="button" onclick="document.getElementById('masse').value = ''; document.getElementById('Taille').value = '';resetIMG();"
+               value="Effacer">
+        <input onclick="imc()" onmouseover="hover()" onmouseout="exitHover()" type="button" value="Valider" id="valid">
+        <p id="avertissement">Appuyer sur le bouton pour calculer l'IMC</p>
+    </form>
+   <p id="res"></p>
+</fieldset>
+
+
+</body>

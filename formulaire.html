@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquête de santé</title>
+</head>
+<body>
+<fieldset title="Information personnelle"><legend>Information personnelle</legend>
+<form>
+    <label>Nom</label><br>
+    <input type="text" placeholder="Nom">
+    <input type="text" placeholder="Prenom">
+    <br>
+    <label>Date de naissance</label>
+    &emsp;&emsp;&emsp;&emsp;<label>Genre</label><br>
+    <input type="date">&emsp;&emsp;
+    <input type="radio">Homme&emsp;&emsp;
+    <input type="radio">Femme
+    <br>
+    <br>
+    <br>
+    <label>Adresse</label><br>
+    <input type="text" placeholder="Rue"><br>
+    <input type="number" placeholder="n°"><br>
+    <input type="text" placeholder="Ville">
+    <input type="number" placeholder="Code postale"><br>
+    <select name="pays">
+        <option value="France" selected="selected">France </option>
+        <option value="Angleterre">Angleterre</option>
+        <option value="Allemagne">Allemagne</option>
+    </select>
+    <br>
+    <br>
+    <label>Telephone</label><br>
+    <input type="tel" placeholder="Fixe"><input type="tel" placeholder="portable">
+    <br>
+    <br>
+    <label>Email</label><br>
+    <input type="email" placeholder="nom.prenom@example.fr">
+
+
+</form>
+</fieldset>
+<fieldset>
+    <legend>A propos de vous</legend>
+    <form>
+        <label>Quels est votre </label><br>
+        <input type="number" placeholder="âge ?">
+        <input type="number" placeholder="poids ?">
+        <input type="number" placeholder="taille?(en cm)"><br>
+        <label> Faite vous l'un des exercices suivant ?</label>
+        <input type="checkbox">Marche<br>
+        <input type="checkbox">Course<br>
+        <input type="checkbox">Nage<br>
+        <input type="checkbox">Vélo<br>
+        <input type="checkbox">Autre<br>
+        <input type="checkbox">Je ne fait pas d'exercice<br>
+        <label>En moyenne combien de temps dormez-vous par nuit ?</label><br>
+        <input type="text"><br>
+        <label>Avez-vous déja fumer?</label><br>
+        <input type="radio">Oui<input type="radio">Non<br>
+        <label>Avez-vous déja consommé de la drogue ?</label><br>
+        <input type="radio">Oui<input type="radio">Non<br>
+        <label>Consommez-vous de l'alcool ?</label><br>
+        <input type="radio">Oui<input type="radio">Non<br>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>Information médicale</legend>
+    <form>
+        <label>Selectionner les maladies qui vous concerne ou concerne votre famille</label><br>
+        <input type="checkbox">Asthme<br>
+        <input type="checkbox">Cancer<br>
+        <input type="checkbox">VIH ou IST<br>
+        <input type="checkbox">Diabete<br>
+        <input type="checkbox">Hypertension<br>
+        <input type="checkbox">Malaria<br>
+        <input type="checkbox">Problème de tension<br>
+        <input type="checkbox">Trouble psychiatrique<br>
+        <input type="checkbox">Santé mental<br>
+        <input type="checkbox">AVC<br>
+        <input type="checkbox">Autres<br>
+        <input type="checkbox">RAS<br><br>
+        <label>Cochez tous les symptômes que vous avez</label><br>
+        <input type="checkbox">Allergie<br>
+        <input type="checkbox">Conjonctivite<br>
+        <input type="checkbox">lymphatique<br>
+        <input type="checkbox">Fievre<br>
+        <input type="checkbox">Trouble d'alimentation<br>
+        <input type="checkbox">dermatalogique<br>
+        <input type="checkbox">Muscle douloureux<br>
+        <input type="checkbox">Peau<br>
+        <input type="checkbox">Gastro<br>
+        <input type="checkbox">perte de poids<br>
+        <input type="checkbox">Autres<br>
+        <input type="checkbox">RAS<br><br>
+
+        <label>Pouvez-vous lister toutes les allergies aux médicament que vous avez ?</label><br>
+        <textarea rows="6" cols="50">
+        </textarea><br>
+        <label>Listez tout les médicaments que vous prenez en ce moment</label><br>
+        <textarea rows="6" cols="50">
+        </textarea><br><br>
+        <label>Si vous êtes une femme êtes vous enceinte ?</label><br>
+        <input type="radio">Oui<input type="radio">Non<input type="radio">Pas applicable <br>
+        <label>En général votre santé est plutôt <br>
+        *1=Très mauvaise    5=Excellente</label><br>
+        <input type="number"><br>
+        <label>A quels points êtes vous d'accord avec la phrase suivante?<br>
+        "Je peux très bien me soigner quand je veux et quand j'en ai besoin"<br>
+            <i>*1= pas d'accord et 5 tout à fait d'accord</i>
+        </label><br>1
+        <input type="range" min="1" max="5">5
+    </form>
+</fieldset>
+<input type="submit">
+</body>
+</html>

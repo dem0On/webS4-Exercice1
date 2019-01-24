@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorielle</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript"
+            src="fonctionFactorielle.js">
+    </script>
+</head>
+<body onload="exitHover()">
+<ul id="main-nav">
+    <li><a>Actions</a>
+        <ul>
+            <li><a onclick="calcul()">Calculer</a></li>
+            <li><a onclick="document.getElementById('nombre').value = '';resetIMG();">Effacer</a></li>
+            <li><a onclick="print()">Imprimer</a></li>
+        </ul>
+    </li>
+    <li><a href="imc.html">Mode</a>
+        <ul>
+            <li><a href="imc.html">Calculer IMC</a></li>
+            <li><a href="factorielle.html">Calculer factorielle</a></li>
+            <li><a href="fibonacci.html">Calculer fibonacci </a></li>
+            <li><a href="convertion.html">Convertir</a></li>
+        </ul>
+    </li>
+    <li><a href="imc.html">Aide</a>
+        <ul>
+            <li><a href="imc.html">Description du site</a></li>
+            <li><a href="imc.html">Nous contacter</a></li>
+        </ul>
+    </li>
+</ul>
+<h1>Calcul de la factorielle d'un nombre</h1>
+<fieldset>
+    <h3>insérez un nombre entier positif</h3>
+    <form id="facto">
+        <label>Nombre entier positif</label>
+        <input id="nombre" type="text" placeholder="ex: 65" value="" onchange="verifChamp()"><img width="25" src="" id="imgNombre">
+        <p id="warningN"></p>
+        <br>
+        <input id="delFacto" onclick="document.getElementById('nombre').value = '';resetIMG();" type="button" value="effacer">
+        <input id="validFacto" onclick="calcul()" value="valider" type="button" onmouseover="hover()" onmouseout="exitHover()">
+        <p id="avertissement">Appuyer pour lancer le calcul</p>
+    </form>
+    <p id="resFactorielle"></p>
+</fieldset>
+</body>
+</html>
